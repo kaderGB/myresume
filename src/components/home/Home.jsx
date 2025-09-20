@@ -18,7 +18,7 @@ const Home = () => {
           
           {/* Text changer */}
           <div className="text-changer">
-            <p className="text-intro">Hello i'm a </p>
+           
             <div className="roles-container">
               <span className="role">Software Engineer</span>
               <span className="role">UxUi Designer</span>

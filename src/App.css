@@ -25,3 +25,41 @@ html, body {
   }
 }
 
+
+/* Main Content - Évite chevauchement sidebar */
+.main-content {
+  margin-left: 110px; /* Largeur sidebar */
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive - Full width mobile */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0; /* Pleine largeur mobile */
+  }
+}
+
+/* Overlay pour fermer sidebar */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Focus accessibilité */
+.main-content:focus-within {
+  outline: none;
+}
