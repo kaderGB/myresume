@@ -1,0 +1,27 @@
+.main {
+  margin-left: 110px;
+  background-image:linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+  
+}
+
+/* Empêche tout débordement */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Cache horizontal */
+  overflow-y: auto; /* Scroll vertical OK */
+}
+
+@media screen and (max-width: 1024px){
+  .main{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .main{
+    margin-left: 5px;
+   
+    
+  }
+}
+
