@@ -1,16 +1,18 @@
 {
-  "name": "portfolio",
+  "name": "myresume",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kadergb.github.io/myresume",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.0.1",
     "@fortawesome/fontawesome-svg-core": "^7.0.1",
     "aos": "^2.3.4",
     "react": "^19.1.1",

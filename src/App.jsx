@@ -1,5 +1,5 @@
 import About from "./components/about/About"
-import Sidebar from "./components/sidebar/sidebar"
+import Sidebar from './components/sidebar/Sidebar.jsx'
 import Blog from "./components/blog/Blog"
 import Contact from "./components/contact/Contact"
 import Home from "./components/home/Home"

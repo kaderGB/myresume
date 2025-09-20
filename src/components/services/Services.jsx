@@ -1,8 +1,8 @@
 import React from 'react'
-import "./services.css" 
+import "./services.css"
 import Workwith from './Workwith'
 
-// Import FontAwesome pour icônes principales
+// FontAwesome → React-Icons
 import { 
   FaCode, 
   FaPalette, 
@@ -10,53 +10,26 @@ import {
   FaChartLine, 
   FaUsers, 
   FaHandsHelping 
-} from 'react-icons/fa'
+} from 'react-icons/fa' // ✅ React-Icons
 
 const Services = () => {
-  // Données avec icônes FontAwesome UNIQUEMENT
   const servicesData = [
-    {
-      icon: <FaCode className="service-icon" />,
-      title: 'Software Development',
-      subtitle: 'Building Your Vision, Line by Line'
-    },
-    {
-      icon: <FaPalette className="service-icon" />,
-      title: 'UX/UI Design',
-      subtitle: 'Designing Intuitive, User-Centric Experiences'
-    },
-    {
-      icon: <FaProjectDiagram className="service-icon" />,
-      title: 'IT Project Management',
-      subtitle: 'Leading Projects to Success'
-    },
-    {
-      icon: <FaChartLine className="service-icon" />,
-      title: 'Agile Coaching',
-      subtitle: 'Empowering Agile Transformation'
-    },
-    {
-      icon: <FaUsers className="service-icon" />,
-      title: 'Agile Facilitation',
-      subtitle: 'Fostering Collaborative Agile Practices'
-    },
-    {
-      icon: <FaHandsHelping className="service-icon" />,
-      title: 'Social Volunteering',
-      subtitle: 'Driving Community Impact'
-    }
+    { icon: <FaCode className="service-icon" />, title: 'Software Development', subtitle: 'Building Your Vision, Line by Line' },
+    { icon: <FaPalette className="service-icon" />, title: 'UX/UI Design', subtitle: 'Designing Intuitive, User-Centric Experiences' },
+    { icon: <FaProjectDiagram className="service-icon" />, title: 'IT Project Management', subtitle: 'Leading Projects to Success' },
+    { icon: <FaChartLine className="service-icon" />, title: 'Agile Coaching', subtitle: 'Empowering Agile Transformation' },
+    { icon: <FaUsers className="service-icon" />, title: 'Agile Facilitation', subtitle: 'Fostering Collaborative Agile Practices' },
+    { icon: <FaHandsHelping className="service-icon" />, title: 'Social Volunteering', subtitle: 'Driving Community Impact' }
   ]
 
   return (
     <section className="services" id="services">
       <div className="container">
-        {/* Titre avec margin 40px */}
         <h2 className="section_title">Services</h2>
         <h3 className="section_title1">
           Transforming visions into reality through technology, design, and Agile expertise.
         </h3>
         
-        {/* Grille 3x2 - Icônes centrées UNIQUEMENT */}
         <div className="services-grid">
           {servicesData.map((service, index) => (
             <div key={index} className="card_service" tabIndex={0}>
