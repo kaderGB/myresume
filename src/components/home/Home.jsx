@@ -42,7 +42,7 @@ const Home = () => {
           <Social />
           
           {/* Bouton Resume - COHÉRENT */}
-          <a href="resumecv.pdf" download="resumecv.pdf" className="resume-link">
+          <a href="../../resumecv.pdf" download="resumecv.pdf" className="resume-link">
             <button className="btn_resume">
               <span className="btn-text">Resume</span>
               <i className="fas fa-download btn-icon"></i>
