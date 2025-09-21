@@ -1,32 +1,33 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Sidebar from './components/Sidebar/Sidebar.jsx' // ✅ Import corrigé
-import Home from './components/Home/Home.jsx'
-import About from './components/About/About.jsx'
-import Services from './components/Services/Services.jsx'
-import Portfolio from './components/Portfolio/Portfolio.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import About from "./components/about/About"
+import Sidebar from './components/sidebar/Sidebar'
+import Blog from "./components/blog/Blog"
+import Contact from "./components/contact/Contact"
+import Home from "./components/home/Home"
+import Portfolio from "./components/portfolio/Portfolio"
+import Pricing from "./components/pricing/Pricing"
+import Resume from "./components/resume/Resume"
+import Services from "./components/services/Services"
+import Testimonials from "./components/testimonials/Testimonials"
 import './App.css'
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* Sidebar toujours visible */}
-        <Sidebar />
-        
-        {/* Contenu principal */}
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <>
+      <Sidebar/>
+      <main className="main">
+      <Home/>
+      <About/>
+      <Services/>
+      <Resume/>
+      <Portfolio/>
+      <Pricing/>
+      <Testimonials/>
+      <Blog/>
+      <Contact/>
+      </main>
+      
+    </>
   )
 }
 
